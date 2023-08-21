@@ -4,7 +4,7 @@
 
 #0027C2 azul escuro
 #570475 roxo
-#5f2c82lilás
+#5f2c82 lilás
 #80A6F7 azul claro
 #2E62D1 azul médio
 
@@ -59,4 +59,13 @@ section#login >div#imagem {
 section#login > div#form {
     display: block;
     padding: 10px;
+}
+
+div#form > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#form > p {
+    font-size: 0.8em;
 }
