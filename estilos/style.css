@@ -35,7 +35,7 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    
     overflow: hidden;
 
     background-color: white;
@@ -46,6 +46,7 @@ section#login {
 
     transition: width 1s, heigth 1s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 
 }
 
@@ -73,16 +74,41 @@ div#form > p {
 
 form > div.campo {
     background-color: #755b86;
+    border: 2px solid #755b86 ;
     display: block;
     width: 100%;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
 
 }
 
 div.campo > label {
     display: none;
+
+}
+
+div.campo > span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo input {
+    background-color:#80A6F7 ;
+    font-size: 1em;
+    width: calc(100% - 46px);
+    height: 100%;
+    
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-12px);
+}
+
+div.campo > input:focus-within {
+    background-color: white;
+    outline: none;
 
 }
 
@@ -123,6 +149,3 @@ form > a.botao > i {
 
 }
 
-div {
-    padding: 10px;
-}
